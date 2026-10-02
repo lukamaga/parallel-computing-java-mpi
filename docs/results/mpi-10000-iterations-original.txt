@@ -1,0 +1,36 @@
+1920x1080, 10000 iteraciju, 32 grainsize:x 
+Total time: 22.331962 s with 1 processes
+Total time: 23.275706 s with 2 processes
+Total time: 7.761372 s with 4 processes
+Total time: 3.626562 s with 8 processes
+Total time: 2.308023 s with 16 processes
+Total time: 2.746344 s with 32 processes
+Total time: 2.753479 s with 64 processes
+Total time: 2.749189 s with 128 processes
+Total time: 2.757317 s with 256 processes
+
+
+720x720, 10000 iteraciju, 32 grainsize:
+Total time: 5.596834 s with 1 processes
+Total time: 5.850618 s with 2 processes
+Total time: 1.926630 s with 4 processes
+Total time: 0.909775 s with 8 processes
+Total time: 0.869972 s with 16 processes
+Total time: 0.992450 s with 32 processes
+Total time: 0.974330 s with 64 processes
+Total time: 0.994637 s with 128 processes
+Total time: 0.994695 s with 256 processes
+
+3840x2160, 10000 iteraciju, 32 grainsize:
+Total time: 95.935687 s with 1 processes
+Total time: 95.556062 s with 2 processes
+Total time: 31.966935 s with 4 processes
+Total time: 14.563692 s with 8 processes
+Total time: 8.351793 s with 16 processes
+Total time: 4.976401 s with 32 processes
+Total time: 5.566426 s with 64 processes
+Total time: 5.593185 s with 128 processes
+Total time: 5.591684 s with 256 processes
+
+
+

@@ -1,0 +1,9 @@
+mpirun -np 1 ./mandelbrot_mpi 720 720 100 32 mandelbrot.ppm #Executable 1
+Total time: 0.000 s with 1 processes
+Total time: 0.079 s with 2 processes
+Total time: 0.026 s with 4 processes
+Total time: 0.018 s with 8 processes
+Total time: 0.021 s with 16 processes
+Total time: 0.017 s with 64 processes
+Total time: 0.014 s with 128 processes
+Total time: 0.020 s with 256 processes

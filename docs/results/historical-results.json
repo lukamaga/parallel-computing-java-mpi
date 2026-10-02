@@ -1,0 +1,365 @@
+{
+  "status": "Recorded 2025 coursework results, not fresh benchmark measurements.",
+  "units": {
+    "time": "seconds",
+    "speedup": "dimensionless T(1)/T(p)",
+    "grain_size": "image rows"
+  },
+  "java": {
+    "source": "lyg_sk3/Ataskaita.pdf pages 1–3",
+    "environment_reported": "MacBook Pro, Apple M3 Max, 16 CPU cores (12 performance + 4 efficiency), 64 GB RAM. GPU mentioned in hardware inventory, not used by the Java algorithm.",
+    "width": 1920,
+    "height": 1080,
+    "max_iterations": 100000,
+    "grain_size": 32,
+    "table_rows": [
+      {
+        "threads": 1,
+        "time_seconds_reported": "86.927",
+        "speedup_reported": "1.000000"
+      },
+      {
+        "threads": 2,
+        "time_seconds_reported": "44.641",
+        "speedup_reported": "1.947246"
+      },
+      {
+        "threads": 4,
+        "time_seconds_reported": "25.039",
+        "speedup_reported": "3.471664"
+      },
+      {
+        "threads": 8,
+        "time_seconds_reported": "12.631",
+        "speedup_reported": "6.882036"
+      },
+      {
+        "threads": 16,
+        "time_seconds_reported": "9.772",
+        "speedup_reported": "8.895518"
+      },
+      {
+        "threads": 32,
+        "time_seconds_reported": "9.797",
+        "speedup_reported": "8.872818"
+      }
+    ],
+    "chart_labels": [
+      {
+        "threads": 1,
+        "time_seconds_label": "86.507",
+        "speedup_label": "1.000",
+        "efficiency_label": "100.00%"
+      },
+      {
+        "threads": 2,
+        "time_seconds_label": "44.509",
+        "speedup_label": "1.944",
+        "efficiency_label": "97.20%"
+      },
+      {
+        "threads": 4,
+        "time_seconds_label": "25.041",
+        "speedup_label": "3.455",
+        "efficiency_label": "86.38%"
+      },
+      {
+        "threads": 8,
+        "time_seconds_label": "12.638",
+        "speedup_label": "6.845",
+        "efficiency_label": "85.56%"
+      },
+      {
+        "threads": 16,
+        "time_seconds_label": "9.812",
+        "speedup_label": "8.816",
+        "efficiency_label": "55.10%"
+      },
+      {
+        "threads": 32,
+        "time_seconds_label": "9.922",
+        "speedup_label": "8.719",
+        "efficiency_label": "27.25%"
+      }
+    ],
+    "discrepancy": "Table and embedded chart values differ. Both are preserved as separately identified archival series; source does not explain why."
+  },
+  "mpi": {
+    "source": "lyg_sk4/results.txt and lyg_sk4/Ataskaita_2.pdf pages 1–2",
+    "environment_reported": "Slurm main partition, Open MPI module; exact CPU model, node allocation, compiler/MPI versions and repetition count not recorded in cited report.",
+    "max_iterations": 10000,
+    "grain_size": 32,
+    "baseline_caveat": "The main mandelbrot_mpi.c uses rank 0 only as coordinator and requires at least two ranks to render. archive/mpi/mandelbrot-serial-variant.c includes a one-rank rendering path, but the exact revision behind each report measurement is not recorded. The archived variant does not establish provenance for every excess-rank measurement. Speedups are retained historical report ratios.",
+    "series": [
+      {
+        "width": 720,
+        "height": 720,
+        "rows": [
+          {
+            "processes": 1,
+            "time_seconds_reported": "5.596834",
+            "speedup_reported": "1"
+          },
+          {
+            "processes": 2,
+            "time_seconds_reported": "5.850618",
+            "speedup_reported": "0.9566227020803615"
+          },
+          {
+            "processes": 4,
+            "time_seconds_reported": "1.926630",
+            "speedup_reported": "2.904986427077332"
+          },
+          {
+            "processes": 8,
+            "time_seconds_reported": "0.909775",
+            "speedup_reported": "6.151888104201588"
+          },
+          {
+            "processes": 16,
+            "time_seconds_reported": "0.869972",
+            "speedup_reported": "6.433349579066913"
+          },
+          {
+            "processes": 32,
+            "time_seconds_reported": "0.992450",
+            "speedup_reported": "5.639411557257293"
+          },
+          {
+            "processes": 64,
+            "time_seconds_reported": "0.974330",
+            "speedup_reported": "5.744289922305584"
+          },
+          {
+            "processes": 128,
+            "time_seconds_reported": "0.994637",
+            "speedup_reported": "5.627011663551627"
+          },
+          {
+            "processes": 256,
+            "time_seconds_reported": "0.994695",
+            "speedup_reported": "5.626683556265991"
+          }
+        ]
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "rows": [
+          {
+            "processes": 1,
+            "time_seconds_reported": "22.331962",
+            "speedup_reported": "1"
+          },
+          {
+            "processes": 2,
+            "time_seconds_reported": "23.275706",
+            "speedup_reported": "0.9594536896109618"
+          },
+          {
+            "processes": 4,
+            "time_seconds_reported": "7.761372",
+            "speedup_reported": "2.877321432344694"
+          },
+          {
+            "processes": 8,
+            "time_seconds_reported": "3.626562",
+            "speedup_reported": "6.157887828748"
+          },
+          {
+            "processes": 16,
+            "time_seconds_reported": "2.308023",
+            "speedup_reported": "9.675796991624434"
+          },
+          {
+            "processes": 32,
+            "time_seconds_reported": "2.746344",
+            "speedup_reported": "8.131523946016959"
+          },
+          {
+            "processes": 64,
+            "time_seconds_reported": "2.753479",
+            "speedup_reported": "8.11045299419389"
+          },
+          {
+            "processes": 128,
+            "time_seconds_reported": "2.749189",
+            "speedup_reported": "8.123109033245806"
+          },
+          {
+            "processes": 256,
+            "time_seconds_reported": "2.757317",
+            "speedup_reported": "8.09916378856693"
+          }
+        ]
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "rows": [
+          {
+            "processes": 1,
+            "time_seconds_reported": "95.935687",
+            "speedup_reported": "1"
+          },
+          {
+            "processes": 2,
+            "time_seconds_reported": "95.556062",
+            "speedup_reported": "1.0039727987116087"
+          },
+          {
+            "processes": 4,
+            "time_seconds_reported": "31.966935",
+            "speedup_reported": "3.0010911900061736"
+          },
+          {
+            "processes": 8,
+            "time_seconds_reported": "14.563692",
+            "speedup_reported": "6.5873191358345125"
+          },
+          {
+            "processes": 16,
+            "time_seconds_reported": "8.351793",
+            "speedup_reported": "11.486837257580497"
+          },
+          {
+            "processes": 32,
+            "time_seconds_reported": "4.976401",
+            "speedup_reported": "19.27812630051316"
+          },
+          {
+            "processes": 64,
+            "time_seconds_reported": "5.566426",
+            "speedup_reported": "17.234700865510472"
+          },
+          {
+            "processes": 128,
+            "time_seconds_reported": "5.593185",
+            "speedup_reported": "17.152246349798908"
+          },
+          {
+            "processes": 256,
+            "time_seconds_reported": "5.591684",
+            "speedup_reported": "17.156850601714975"
+          }
+        ]
+      }
+    ]
+  },
+  "additional_mpi_log": {
+    "source": "lyg_sk4/720x720,100iter.txt",
+    "width": 720,
+    "height": 720,
+    "max_iterations": 100,
+    "grain_size": 32,
+    "caveat": "One-process entry is 0.000 seconds, so it is not a meaningful rendering baseline. No speedup is derived. 32-process result is absent.",
+    "rows": [
+      {
+        "processes": 1,
+        "time_seconds_reported": "0.000"
+      },
+      {
+        "processes": 2,
+        "time_seconds_reported": "0.079"
+      },
+      {
+        "processes": 4,
+        "time_seconds_reported": "0.026"
+      },
+      {
+        "processes": 8,
+        "time_seconds_reported": "0.018"
+      },
+      {
+        "processes": 16,
+        "time_seconds_reported": "0.021"
+      },
+      {
+        "processes": 64,
+        "time_seconds_reported": "0.017"
+      },
+      {
+        "processes": 128,
+        "time_seconds_reported": "0.014"
+      },
+      {
+        "processes": 256,
+        "time_seconds_reported": "0.020"
+      }
+    ]
+  },
+  "assets": [
+    {
+      "file": "java-runtime-by-threads.png",
+      "caption": "Java rendering time by thread count; 1920 × 1080, maxIter=100000, grainSize=32. Historical chart labels differ from the adjacent report table.",
+      "source": "lyg_sk3/lyg_sk3_graphs/myplot.png",
+      "report_evidence": "Java report, page 2",
+      "copy_method": "byte-identical original file",
+      "sha256": "8df877b2345ad0a2c4197efac9ebf9cf9a212298ec9d9a80291f46224e6a33cd"
+    },
+    {
+      "file": "java-speedup-by-threads.png",
+      "caption": "Java speedup by thread count, with ideal S(p)=p reference; 1920 × 1080, maxIter=100000, grainSize=32. Uses the chart series, not the report table series.",
+      "source": "lyg_sk3/lyg_sk3_graphs/myplot2.png",
+      "report_evidence": "Java report, page 3",
+      "copy_method": "byte-identical original file",
+      "sha256": "a601f043df2972f749acd6b054c0800dea8fb05f500656a131fea027490893a6"
+    },
+    {
+      "file": "java-efficiency-by-threads.png",
+      "caption": "Java parallel efficiency E(p)=S(p)/p for 1, 2, 4, 8, 16 and 32 threads; 1920 × 1080, maxIter=100000, grainSize=32. Uses the chart series.",
+      "source": "lyg_sk3/lyg_sk3_graphs/myplot3.png",
+      "report_evidence": "Java report, page 3",
+      "copy_method": "byte-identical original file",
+      "sha256": "998cafbd87115778656b347df260515c243efcef6016d7169d75101ea6ea7945"
+    },
+    {
+      "file": "java-speedup-by-iteration-limit.png",
+      "caption": "Java speedup for maxIter=1000, 2000, 5000, 10000, 50000 and 100000 at grainSize=32. The report does not explicitly restate image dimensions for this sweep.",
+      "source": "lyg_sk3/lyg_sk3_graphs/myplot4.png",
+      "report_evidence": "Java report, page 4",
+      "copy_method": "byte-identical original file",
+      "sha256": "eced3416785f387a216a56424e34490bbfcb940d1df7788ccd0dfb0adbab2dbb"
+    },
+    {
+      "file": "java-runtime-by-grain-size.png",
+      "caption": "Java runtime versus block height (1, 2, 4, 16, 32, 64, 128, 256 rows) at maxIter=10000; series show 1–32 threads. Image dimensions are not explicitly restated for this sweep.",
+      "source": "lyg_sk3/lyg_sk3_graphs/myplot5.png",
+      "report_evidence": "Java report, page 4",
+      "copy_method": "byte-identical original file",
+      "sha256": "47283e91d5c0f38bb0d009ff98de856b5d81e75dbf504ebc39f05fc5371deb68"
+    },
+    {
+      "file": "java-speedup-by-grain-size.png",
+      "caption": "Java speedup versus block height at maxIter=10000; series show 1–32 threads. The x-axis is grainSize, not thread count. Image dimensions are not explicitly restated for this sweep.",
+      "source": "lyg_sk3/lyg_sk3_graphs/myplot6.png",
+      "report_evidence": "Java report, page 5",
+      "copy_method": "byte-identical original file",
+      "sha256": "3ea66b4554867e2085f6d96b478e3c32c2a3aac20b8f2d714b7836cd9d3f5029"
+    },
+    {
+      "file": "java-mandelbrot-1920x1080.png",
+      "caption": "Preserved Java Mandelbrot rendering, 1920 × 1080 pixels. The saved image does not establish its exact maxIter, grainSize or thread count.",
+      "source": "lyg_sk3/src/mandelbrot.png",
+      "report_evidence": "Java source output; also shown on Java report page 5",
+      "copy_method": "byte-identical original file",
+      "sha256": "cce7c19b4ee131003ece76452f006dcc0217a7aebf0703689b152859116f4283"
+    },
+    {
+      "file": "mpi-speedup-by-image-size.png",
+      "caption": "Historical MPI speedup T(1)/T(p) for 720 × 720, 1920 × 1080 and 3840 × 2160 images; maxIter=10000, grainSize=32, 1–256 reported processes. The one-process reference is historical; the main implementation has no serial rendering path, while the archived variant does. The exact revision behind the measurements is not recorded.",
+      "source": "lyg_sk4/Ataskaita_2.docx: word/media/image1.png",
+      "report_evidence": "MPI report, page 2",
+      "copy_method": "byte-identical embedded PNG extraction",
+      "sha256": "93a0dc6506a082086c7c9e4d7928a319927b2851723024e5eb0db3f9a1ab4e72"
+    },
+    {
+      "file": "mpi-mandelbrot-720x720.png",
+      "caption": "Preserved MPI Mandelbrot rendering, 720 × 720 pixels. Extracted from the report; its RGB pixels exactly match the saved mandelbrot.ppm. The precise run parameters are not established by the image.",
+      "source": "lyg_sk4/Ataskaita_2.docx: word/media/image2.png",
+      "report_evidence": "MPI report, page 3",
+      "copy_method": "byte-identical embedded PNG extraction",
+      "sha256": "2fdc8d0e838c858dcbdc59f2e6c170ed8bf03cc36b86dda0ea87bfdfe1131342"
+    }
+  ]
+}

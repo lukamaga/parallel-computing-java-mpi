@@ -1,0 +1,26 @@
+# Generated binaries and images from the documented commands
+/build/
+/mandelbrot.png
+/mandelbrot.ppm
+*.class
+*.o
+*.dSYM/
+
+# Optional figure-generation environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local IDE and operating-system files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Cluster job output
+/slurm-*.out
