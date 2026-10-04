@@ -6,7 +6,7 @@
     "grain_size": "image rows"
   },
   "java": {
-    "source": "lyg_sk3/Ataskaita.pdf pages 1–3",
+    "source": "lyg_sk3/Ataskaita.pdf pages 1-3",
     "environment_reported": "MacBook Pro, Apple M3 Max, 16 CPU cores (12 performance + 4 efficiency), 64 GB RAM. GPU mentioned in hardware inventory, not used by the Java algorithm.",
     "width": 1920,
     "height": 1080,
@@ -85,7 +85,7 @@
     "discrepancy": "Table and embedded chart values differ. Both are preserved as separately identified archival series; source does not explain why."
   },
   "mpi": {
-    "source": "lyg_sk4/results.txt and lyg_sk4/Ataskaita_2.pdf pages 1–2",
+    "source": "lyg_sk4/results.txt and lyg_sk4/Ataskaita_2.pdf pages 1-2",
     "environment_reported": "Slurm main partition, Open MPI module; exact CPU model, node allocation, compiler/MPI versions and repetition count not recorded in cited report.",
     "max_iterations": 10000,
     "grain_size": 32,
@@ -323,7 +323,7 @@
     },
     {
       "file": "java-runtime-by-grain-size.png",
-      "caption": "Java runtime versus block height (1, 2, 4, 16, 32, 64, 128, 256 rows) at maxIter=10000; series show 1–32 threads. Image dimensions are not explicitly restated for this sweep.",
+      "caption": "Java runtime versus block height (1, 2, 4, 16, 32, 64, 128, 256 rows) at maxIter=10000; series show 1-32 threads. Image dimensions are not explicitly restated for this sweep.",
       "source": "lyg_sk3/lyg_sk3_graphs/myplot5.png",
       "report_evidence": "Java report, page 4",
       "copy_method": "byte-identical original file",
@@ -331,7 +331,7 @@
     },
     {
       "file": "java-speedup-by-grain-size.png",
-      "caption": "Java speedup versus block height at maxIter=10000; series show 1–32 threads. The x-axis is grainSize, not thread count. Image dimensions are not explicitly restated for this sweep.",
+      "caption": "Java speedup versus block height at maxIter=10000; series show 1-32 threads. The x-axis is grainSize, not thread count. Image dimensions are not explicitly restated for this sweep.",
       "source": "lyg_sk3/lyg_sk3_graphs/myplot6.png",
       "report_evidence": "Java report, page 5",
       "copy_method": "byte-identical original file",
@@ -347,7 +347,7 @@
     },
     {
       "file": "mpi-speedup-by-image-size.png",
-      "caption": "Historical MPI speedup T(1)/T(p) for 720 × 720, 1920 × 1080 and 3840 × 2160 images; maxIter=10000, grainSize=32, 1–256 reported processes. The one-process reference is historical; the main implementation has no serial rendering path, while the archived variant does. The exact revision behind the measurements is not recorded.",
+      "caption": "Historical MPI speedup T(1)/T(p) for 720 × 720, 1920 × 1080 and 3840 × 2160 images; maxIter=10000, grainSize=32, 1-256 reported processes. The one-process reference is historical; the main implementation has no serial rendering path, while the archived variant does. The exact revision behind the measurements is not recorded.",
       "source": "lyg_sk4/Ataskaita_2.docx: word/media/image1.png",
       "report_evidence": "MPI report, page 2",
       "copy_method": "byte-identical embedded PNG extraction",
